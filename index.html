@@ -1,32 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SFL Schedule</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SFL Hub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="side-bar">
-            <div class="side-bar__header">
-                <h4 class="side-bar_header--title">SFL Schedule</h4>
-            </div>
-            <div class="side-bar__nav">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Schedule</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a href="#" class="nav-link"></a>
-                    </li> -->
-                </ul>
-            </div>
+      <div class="menu-bar">
+        <div class="menu-bar__header">
+          <h1 class="menu-bar__header-title">SFL Dispatch Hub</h1>
         </div>
+        <div class="menu-bar__navigation">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./schedule.html" class="nav-link">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Motive</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    
-</body>
+
+    <section class="section-greeting">
+      <div class="greeting">
+        <h1 class="greeting-header">
+          <span class="greeting-header__welcome">Welcome, </span>
+          <span class="greeting-header__name">Rylan</span>
+        </h1>
+      </div>
+
+      <div class="greeting-timebox">
+        <h1 class="greeting-timebox__time"></h1>
+      </div>
+    </section>
+    <section class="section-dashboard">
+      <div class="grid-3">
+        <div class="grid-3__col-1">
+          <div class="card card__revenue">
+            <div class="card-header">
+              <h2 class="card-title">Today's Revenue</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text total-revenue"></p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-3__col-2">
+          <div class="card card__loaded">
+            <div class="card-header">
+              <h2 class="card-title">Loaded Trucks</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">5</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-3__col-3">
+          <div class="card card__unloaded">
+            <div class="card-header">
+              <h2 class="card-title">Unloaded trucks</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">50</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="./js/index.js"></script>
 </html>

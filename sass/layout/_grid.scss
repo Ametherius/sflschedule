@@ -1,0 +1,13 @@
+.grid-3 {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100%;
+}
+
+.schedule-row {
+  display: flexbox;
+  padding: 1.5rem;
+  overflow-x: scroll;
+  max-width: 100%;
+}

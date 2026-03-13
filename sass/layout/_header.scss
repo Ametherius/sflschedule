@@ -1,3 +1,33 @@
-.side-bar {
+.menu-bar {
+  background-color: $black;
+  width: 100%;
+  color: $white;
+
+  &__header {
+    background-color: $gray-1;
+    padding: 0.5rem;
+  }
+
+  &__navigation {
     background-color: $black;
+  }
+
+  .nav {
+    display: flex;
+    list-style: none;
+
+    &-item {
+      padding: 0.5rem 1rem;
+      border-right: 1.5px solid $white;
+      border-radius: 0%;
+    }
+    &-item:hover {
+      background-color: $secondary;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $white;
+    }
+  }
 }
