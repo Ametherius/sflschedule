@@ -19,3 +19,5 @@ revenue.textContent = new Intl.NumberFormat(locale, {
   currency: "CAD",
   currencyDisplay: "narrowSymbol",
 }).format(revenueTotal);
+
+

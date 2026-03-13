@@ -39,6 +39,19 @@ body {
   padding: 1rem;
 }
 
+.schedule-header {
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  padding: 0 5rem;
+}
+
 .btn {
   border-radius: 5rem;
   border: none;
@@ -68,20 +81,82 @@ body {
   border-radius: 1rem 0 0 1rem;
   padding: 1rem;
   width: fit-content;
+  color: #ffffff;
 }
 .driver-card__header {
-  display: flex;
-  margin: auto auto;
-  padding: auto auto;
-}
-.driver-card .driver-name {
-  padding: 0.5rem;
-  text-align: left;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 1rem;
 }
 .driver-card .unit {
+  text-align: left;
+}
+
+.daily-schedule {
+  margin-left: 0.5rem;
+}
+
+.day-1 {
+  border: 1px solid #ffffff;
+}
+.day-1__header {
+  background-color: #ffffff;
+  text-align: center;
   padding: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.load-1,
+.load-2,
+.load-3 {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0.2rem 1.5rem;
+  background-color: #1f7400;
+  padding: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 1rem;
+}
+.load-1__footer,
+.load-2__footer,
+.load-3__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  padding: 0.5rem 1rem;
+  margin-top: 0.1rem;
+  background-color: white;
+  border-radius: 0 0 0 1rem;
+}
+
+.load-container {
+  border-radius: 1rem;
+}
+
+.pickup {
+  padding: 0.5rem;
+  margin-bottom: 0.1rem;
+  background-color: #ffffff;
+  border-radius: 1rem 0 0 0;
+}
+
+.unload {
+  padding: 0.5rem;
+  background-color: #ffffff;
+}
+
+.revenue {
   text-align: right;
-  margin-left: 1.5rem;
+}
+
+.mt {
+  text-align: left;
+  border-right: 1px dashed #1f7400;
+  text-align: center;
+}
+
+.fsc {
+  border-right: 1px dashed #1f7400;
+  text-align: center;
 }
 
 .menu-bar {
@@ -120,11 +195,23 @@ body {
   max-width: 100%;
 }
 
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.row-2__col-1 {
+  padding: 0.5rem;
+}
+.row-2__col-2 {
+  padding: 0.5rem;
+}
+
 .schedule-row {
-  display: flexbox;
+  display: flex;
   padding: 1.5rem;
   overflow-x: scroll;
   max-width: 100%;
+  border: 1px solid #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */
