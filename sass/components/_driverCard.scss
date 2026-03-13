@@ -3,21 +3,14 @@
   border-radius: 1rem 0 0 1rem;
   padding: 1rem;
   width: fit-content;
+  color: $white;
 
   &__header {
-    display: flex;
-    margin: auto auto;
-    padding: auto auto;
-  }
-
-  .driver-name {
-    padding: 0.5rem;
-    text-align: left;
+    border-bottom: 1px solid $white;
+    margin-bottom: 1rem;
   }
 
   .unit {
-    padding: 0.5rem;
-    text-align: right;
-    margin-left: 1.5rem;
+    text-align: left;
   }
 }

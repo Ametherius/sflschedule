@@ -1,0 +1,67 @@
+.daily-schedule {
+  margin-left: 0.5rem;
+}
+
+.day-1 {
+  border: 1px solid $white;
+
+  &__header {
+    background-color: $white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+.load-1,
+.load-2,
+.load-3 {
+  background-color: $white;
+  text-align: center;
+  margin: 0.2rem 1.5rem;
+  background-color: $secondary-light;
+  padding: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 1rem;
+
+  &__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding: 0.5rem 1rem;
+    margin-top: 0.1rem;
+    background-color: white;
+    border-radius: 0 0 0 1rem;
+  }
+}
+
+.load-container {
+  border-radius: 1rem;
+}
+
+.pickup {
+  padding: 0.5rem;
+  margin-bottom: 0.1rem;
+  background-color: $white;
+  border-radius: 1rem 0 0 0;
+}
+
+.unload {
+  padding: 0.5rem;
+  background-color: $white;
+}
+
+.revenue {
+  text-align: right;
+}
+
+.mt {
+  text-align: left;
+  border-right: 1px dashed $secondary-light;
+  text-align: center;
+}
+
+.fsc {
+  border-right: 1px dashed $secondary-light;
+  text-align: center;
+}
