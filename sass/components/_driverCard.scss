@@ -1,16 +1,20 @@
 .driver-card {
-  border: 1px solid $white;
+  border: 1px solid $secondary;
   border-radius: 1rem 0 0 1rem;
   padding: 1rem;
   width: fit-content;
-  color: $white;
+  color: $secondary;
 
   &__header {
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $secondary;
     margin-bottom: 1rem;
   }
 
   .unit {
     text-align: left;
+  }
+
+  .row-2 {
+    margin-bottom: 1rem;
   }
 }
