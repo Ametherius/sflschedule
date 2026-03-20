@@ -55,8 +55,6 @@ body {
 .schedule-container {
   width: 100%;
   padding: 0 5rem;
-  border: 1px solid #ffffff;
-  overflow-x: hidden;
   margin-bottom: 2rem;
 }
 
@@ -92,7 +90,6 @@ body {
   color: #0d3200;
   background-color: #ffffff;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  margin: 0.5rem 1rem;
 }
 .driver-card__header {
   border-bottom: 1px solid #0d3200;
@@ -230,6 +227,13 @@ body {
 }
 .row-2__col-2 {
   padding: 0.5rem;
+}
+
+.unit-row {
+  display: flex;
+  max-height: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
