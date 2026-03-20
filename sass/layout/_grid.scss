@@ -8,20 +8,12 @@
 .row-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+
   &__col-1 {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   &__col-2 {
-    padding: .5rem;
+    padding: 0.5rem;
   }
-}
-
-.schedule-row {
-  display: flex;
-  padding: 1.5rem;
-  overflow-x: scroll;
-  max-width: 100%;
-  border: 1px solid $white;
 }

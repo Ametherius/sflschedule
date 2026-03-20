@@ -1,9 +1,11 @@
 .daily-schedule {
   margin-left: 0.5rem;
+  background-color: $white;
 }
 
 .day-1 {
   border: 1px solid $secondary;
+  box-shadow: 0.5rem 0.5rem 1rem rgba($black, 0.3);
 
   &__header {
     background-color: $secondary;
@@ -26,6 +28,7 @@
   grid-template-columns: 1fr 1fr;
   border-radius: 1rem;
   border: 1px solid $secondary;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba($black, 0.3);
 
   &__footer {
     display: grid;

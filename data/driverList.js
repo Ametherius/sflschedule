@@ -1,12 +1,38 @@
 export const driverList = [
-    {
-        name: "Leo Anzano",
-        unit: "51",
-        phone: "(204)-212-2277",
-        fuelCard: "2791188",
-        fuelPIN: "2407",
-        doorPIN: "3636",
-        user: "1105LA",
-        pass: "anzleKT5"
-    }
-]
+  {
+    name: "Kurt Young",
+    unit: "86",
+    phone: "(403)-394-5450",
+    user: "963KY",
+    pass: "Youngkkt1",
+    pin: "7013",
+    petro: "700201",
+    petroPIN: "3788",
+    ufa: "2715920",
+    ufaPIN: "7342",
+  },
+  {
+    name: "Gavin Pineau",
+    unit: "106",
+    phone: "(403)-393-9822",
+    user: "162GP",
+    pass: "pinegkt",
+    pin: "8713",
+    petro: "700227",
+    petroPIN: "5657",
+    ufa: "2715932",
+    ufaPIN: "6011",
+  },
+  {
+    name: "Babal Singh",
+    unit: "72",
+    phone: "(587)-892-2513",
+    user: "1040BS",
+    pass: "singbKT3",
+    pin: "3952",
+    petro: "700191",
+    petroPIN: "7995",
+    ufa: "2715907",
+    ufaPIN: "1827",
+  },
+];
