@@ -68,6 +68,7 @@ body {
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
   padding: 0.5rem;
+  background-color: #ffffff;
 }
 .card-header {
   padding: 1rem;
@@ -110,15 +111,15 @@ body {
   background-color: #ffffff;
 }
 
-.day-1 {
+.day {
   border: 1px solid #0d3200;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
-.day-1__header {
+.day__header {
   background-color: #0d3200;
   text-align: center;
   padding: 0.5rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
   color: #ffffff;
 }
 
@@ -145,6 +146,8 @@ body {
   margin-top: 0.1rem;
   background-color: white;
   border-radius: 0 0 0 1rem;
+  height: 2rem;
+  width: 12rem;
 }
 
 .load-container {
@@ -156,9 +159,13 @@ body {
   margin-bottom: 0.1rem;
   background-color: #ffffff;
   border-radius: 1rem 0 0 0;
+  height: 2rem;
+  width: 12rem;
 }
 
 .unload {
+  width: 12rem;
+  height: 2rem;
   padding: 0.5rem;
   background-color: #ffffff;
 }
@@ -232,8 +239,10 @@ body {
 .unit-row {
   display: flex;
   max-height: 100%;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  overflow-x: scroll;
+  border: 1px solid #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */
