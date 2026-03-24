@@ -87,7 +87,7 @@ body {
   border: 1px solid #0d3200;
   border-radius: 1rem 0 0 1rem;
   padding: 1rem;
-  width: fit-content;
+  min-width: 25rem;
   color: #0d3200;
   background-color: #ffffff;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
@@ -108,19 +108,27 @@ body {
 
 .daily-schedule {
   margin-left: 0.5rem;
-  background-color: #ffffff;
+  background-color: #0d3200;
+  display: flex;
 }
 
 .day {
-  border: 1px solid #0d3200;
-  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  min-width: 30rem;
+  background-color: #ffffff;
+}
+.day:not(:last-child) {
+  margin-right: 1rem;
 }
 .day__header {
   background-color: #0d3200;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
   margin-bottom: 0.5rem;
   color: #ffffff;
+  font-size: 1.1rem;
+}
+.day__header:not(:first-child) {
+  border-left: 1px solid #ffffff;
 }
 
 .load-1,
@@ -142,16 +150,25 @@ body {
 .load-3__footer {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  padding: 0.5rem 1rem;
   margin-top: 0.1rem;
   background-color: white;
   border-radius: 0 0 0 1rem;
   height: 2rem;
   width: 12rem;
 }
+.load-1__notes,
+.load-2__notes,
+.load-3__notes {
+  background-color: #1f7400;
+  border: 1px solid #ffffff;
+  width: 90%;
+  color: #ffffff;
+}
 
 .load-container {
   border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .pickup {
@@ -161,6 +178,10 @@ body {
   border-radius: 1rem 0 0 0;
   height: 2rem;
   width: 12rem;
+  border: none;
+  color: #0d3200;
+  font-weight: bold;
+  text-align: center;
 }
 
 .unload {
@@ -168,21 +189,46 @@ body {
   height: 2rem;
   padding: 0.5rem;
   background-color: #ffffff;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  color: #0d3200;
 }
 
 .revenue {
-  text-align: right;
+  text-align: center;
+  width: 5rem;
+  border: 1px dashed #0d3200;
+  height: 100%;
+  margin: 0;
+  color: #0d3200;
+  font-weight: bold;
 }
 
 .mt {
-  text-align: left;
-  border-right: 1px dashed #1f7400;
   text-align: center;
+  border: none;
+  border-radius: 0 0 0 1rem;
+  border: 1px dashed #0d3200;
+  text-align: center;
+  background-color: #ffffff;
+  width: 3.5rem;
+  cursor: pointer;
+  margin: 0;
+  height: 100%;
+  color: #0d3200;
+  font-weight: bold;
 }
 
 .fsc {
-  border-right: 1px dashed #1f7400;
+  border: none;
+  width: 3.5rem;
+  border: 1px dashed #0d3200;
   text-align: center;
+  cursor: pointer;
+  height: 100%;
+  color: #0d3200;
+  font-weight: bold;
 }
 
 .notes-container {

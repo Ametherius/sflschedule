@@ -2,7 +2,7 @@
   border: 1px solid $secondary;
   border-radius: 1rem 0 0 1rem;
   padding: 1rem;
-  width: fit-content;
+  min-width: 25rem;
   color: $secondary;
   background-color: $white;
   box-shadow: 0.5rem 0.5rem 1rem rgba($black, 0.3);
