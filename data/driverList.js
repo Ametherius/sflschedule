@@ -39,3 +39,5 @@ export const driverList = [
     ufaPIN: "1827",
   },
 ];
+
+console.log(driverList);

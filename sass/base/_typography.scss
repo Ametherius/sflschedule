@@ -17,9 +17,24 @@ body {
 }
 
 .schedule-header {
-  color: $white;
-  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
-  margin: 1.5rem;
-  font-size: 1.5rem;
+
+  &__button-box,
+  &__load-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    color: $white;
+  }
+
+  .plus-icon {
+    margin-right: 0.2rem;
+  }
 }

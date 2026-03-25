@@ -35,7 +35,19 @@
       </div>
     </header>
     <div class="schedule-header">
-      <h2>Weekly Schedule</h2>
+      <div class="schedule-header__button-box">
+        <button class="btn btn-add-driver">
+          <i class="fa-solid fa-plus plus-icon"></i>Add Driver
+        </button>
+      </div>
+      <div class="schedule-header__heading">
+        <h1>Weekly Schedule</h1>
+      </div>
+      <div class="schedule-header__load-button">
+        <button class="btn btn-loadsheet">
+          <i class="fa-solid fa-plus plus-icon"></i>New Loadsheet
+        </button>
+      </div>
     </div>
 
     <div class="schedule-container">
@@ -125,56 +137,112 @@
                   </div>
                 </div>
               </div>
-              <div class="load-2">
-                <div class="load-container">
-                  <p class="pickup">Shaunavon - Bench Farming</p>
-                  <p class="unload">Taber - Kasko Sandy Hill</p>
-                  <div class="load-2__footer">
-                    <div class="mt-container">
-                      <p class="mt">40</p>
-                    </div>
-                    <div class="fsc-container">
-                      <p class="fsc">20</p>
-                    </div>
-                    <div class="revenue-container">
-                      <p class="revenue">$1,400</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="notes-container">
-                  <div class="notes-container__header">
-                    <h4>Load Notes</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="load-3">
-                <div class="load-container">
-                  <p class="pickup">Frontier - TS Organics</p>
-                  <p class="unload">Herbert - Paterson</p>
-                  <div class="load-3__footer">
-                    <div class="mt-container">
-                      <p class="mt">40</p>
-                    </div>
-                    <div class="fsc-container">
-                      <p class="fsc">20</p>
-                    </div>
-                    <div class="revenue-container">
-                      <p class="revenue">$800</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="notes-container">
-                  <div class="notes-container__header">
-                    <h4>Load Notes</h4>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="modal-overlay hidden"></div>
+    <div class="driver-modal hidden">
+      <div class="driver-modal__header">
+        <h4>Enter Driver Info</h4>
+      </div>
+      <div class="driver-modal__body">
+        <form class="driver-form">
+          <div class="row-2">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Driver Full Name"
+              class="form-input"
+            />
+            <input
+              type="text"
+              name="unit"
+              id="unit"
+              placeholder="Unit #"
+              class="form-input"
+            />
+          </div>
+          <div class="row-2">
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Phone Number"
+              class="form-input"
+            />
+            <input
+              type="text"
+              name="pin"
+              id="pin"
+              placeholder="Driver PIN"
+              class="form-input"
+            />
+          </div>
+          <div class="row-2">
+            <input
+              type="text"
+              name="petro"
+              id="petro"
+              placeholder="Petro Number"
+              class="form-input"
+            />
+            <input
+              type="text"
+              name="petroPin"
+              id="petroPin"
+              placeholder="Petro Pin"
+              class="form-input"
+            />
+          </div>
+          <div class="row-2">
+            <input
+              type="text"
+              name="ufa"
+              id="ufa"
+              placeholder="UFA #"
+              class="form-input"
+            />
+            <input
+              type="text"
+              name="ufaPin"
+              id="ufaPin"
+              placeholder="UFA Pin"
+              class="form-input"
+            />
+          </div>
+          <div class="row-2">
+            <input
+              type="text"
+              name="motiveUser"
+              id="motiveUser"
+              placeholder="Motive Username"
+              class="form-input"
+            />
+            <input
+              type="text"
+              name="motivePass"
+              id="motivePass"
+              placeholder="Motive Password"
+              class="form-input"
+            />
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="btn btn-submit">
+              <i class="fa-solid fa-check plus-icon"></i> Submit Driver
+            </button>
+            <button type="button" class="btn btn-close">
+              <i class="fa-solid fa-x plus-icon"></i>Close
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script type="module" src="./js/schedule.js"></script>
+    <script type="module" src="./data/driverList.js"></script>
   </body>
 </html>

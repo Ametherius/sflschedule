@@ -1,5 +1,51 @@
 import { driverList } from "../data/driverList.js";
 const scheduleRow = document.querySelector(".schedule-row");
+const submit = document.querySelector(".btn-submit");
+const driverForm = document.querySelector(".driver-form");
+const addDriver = document.querySelector(".btn-add-driver");
+const close = document.querySelector(".btn-close");
+const modal = document.querySelector(".driver-modal");
+const overlay = document.querySelector(".modal-overlay");
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+addDriver.addEventListener("click", openModal);
+close.addEventListener("click", closeModal);
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (!submit || !driverForm) return;
+  submit.addEventListener("click", function (e) {
+    e.preventDefault();
+    const formData = {
+      id: document.getElementById("unit").value,
+      name: document.getElementById("name").value,
+      unit: document.getElementById("unit").value,
+      phone: document.getElementById("phone").value,
+      user: document.getElementById("motiveUser").value,
+      pass: document.getElementById("motivePass").value,
+      pin: document.getElementById("pin").value,
+      petro: document.getElementById("petro").value,
+      petroPIN: document.getElementById("petroPin").value,
+      ufa: document.getElementById("ufa").value,
+      ufaPIN: document.getElementById("ufaPin").value,
+    };
+
+    driverList.push(formData);
+    renderSchedule();
+    driverForm.reset();
+    closeModal();
+    renderSchedule();
+  });
+});
+
 const renderDriver = function (driver) {
   return `
         <div class="unit-row">
@@ -49,7 +95,7 @@ const renderDriver = function (driver) {
               </div>
               <div class="row-2">
                 <div class="row-2__col-1">
-                  <p class="weekly-rev">Weekly Revenue: $1,000</p>
+                  <p class="weekly-rev">Revenue: $1,000</p>
                 </div>
                 <div class="row-2__col-2">
                   <p class="weekly-fsc">Weekly FSC: $60.00</p>
@@ -134,4 +180,9 @@ const renderWeek = function (driverID) {
   `;
 };
 
-scheduleRow.innerHTML = driverList.map(renderDriver).join("");
+const renderSchedule = function () {
+  if (!scheduleRow) return;
+  scheduleRow.innerHTML = driverList.map(renderDriver).join("");
+};
+
+renderSchedule();
